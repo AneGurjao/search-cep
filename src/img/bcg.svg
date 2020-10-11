@@ -1,0 +1,25 @@
+<svg width="1004" height="6" viewBox="0 0 1004 6">
+  <defs>
+    <linearGradient x1="1.741%" y1="0%" x2="100%" y2="0%" id="a">
+      <stop stop-color="#FFFF4A" offset=".092%" />
+      <stop stop-color="#FCD000" offset="6.753%" />
+      <stop stop-color="#FFC112" offset="10.656%" />
+      <stop stop-color="#FF8A00" offset="16.858%" />
+      <stop stop-color="#FF5F5F" offset="23.198%" />
+      <stop stop-color="#FF5156" offset="28.816%" />
+      <stop stop-color="#FF7AE7" offset="34.908%" />
+      <stop stop-color="#FF5193" offset="41.032%" />
+      <stop stop-color="#C739FF" offset="46.154%" />
+      <stop stop-color="#A400E1" offset="62.954%" />
+      <stop stop-color="#2ECEFF" offset="76.15%" />
+      <stop stop-color="#0086FF" offset="86.938%" />
+      <stop stop-color="#72F772" offset="97.013%" />
+      <stop stop-color="#00D604" offset="100%" />
+    </linearGradient>
+  </defs>
+  <path
+    d="M10 69h1004v3.97a2 2 0 01-2 2H12a2 2 0 01-2-2V69z"
+    transform="matrix(1 0 0 -1 -10 74.97)"
+    fill="url(#a)"
+  />
+</svg>
