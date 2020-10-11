@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  background-color: #509ae9;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+
+header .header-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header .list-menu {
+  width: 20%;
+}
+
+header .list-menu ul {
+  list-style: none;
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+
+header .list-menu ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+header .list-menu ul .navbar__link--active {
+  border-bottom: 3px solid #29b6f6;
+  transform: translateY(-2px);
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+header .bcg-menu {
+  height: 15px;
+}
+
+h1.Title {
+  color: green;
+  text-transform: initial;
+  text-align: center;
+}
+
+form .form-group {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .form-group label {
+  width: 82px;
+}
+
+input {
+  height: 40px;
+  min-width: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+input.error-message {
+  border: 2px solid red;
+}
+
+.MuiButtonBase-root.btn-clear {
+  background: #6cc32e;
+  color: white;
+  text-transform: capitalize;
+  width: 200px;
+}
