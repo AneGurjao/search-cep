@@ -1,6 +1,8 @@
 ## Magalu
 
-Projeto Busca CEP e Protocolo HTTP
+- Projeto Busca CEP;
+- Explicação do Protocolo HTTP;
+- responsividade
 
 ## Tecnologias utlizadas
 
@@ -29,15 +31,25 @@ Você precisará dos seguintes itens instalados corretamente em seu computador.
 
 - `npm test` - Testa as funções da busca cep`
 
+Obs: Apesar de conhecer o Jest, possuo pouca experiência com testes unitários, mas acredito que a evolução vem com a
+oportunidade de aprendizado.
+
 ### Endpoint
 
 Foi utlizada a api do ViaCep, um webservice gratuito que oferece consulta aos cep's de todo Brasil.
 
 - [ViaCep](https://https://viacep.com.br/)
 
+Para validação dos critérios de aceite, utilizei os CEP's
+
+- 02047000
+- 05530111
+- 05530222
+
 ### Protocolo HTTP
 
-No item de Menu `Protocolo HTTP`, está explicação do que ocorre no processo do protocolo HTTP, client-server.
+No item de Menu `Protocolo HTTP`, está a explicação do que ocorre no processo do protocolo HTTP, client-server.
+Utilizei imagens criadas por mim, para explicar de forma visual o processo de comunicação.
 
 ## Rotas
 
