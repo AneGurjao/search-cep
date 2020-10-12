@@ -1,10 +1,8 @@
-// let vezesDeCepNaoEncontrado = 0;
-var fetch = require("node-fetch-polyfill");
+let indexCep = 7;
 
 export const searchCep = () => {
   const { value } = document.getElementById("cep");
   let cep = value.replace(/\D/g, "");
-
   if (cep !== "") {
     consomeCep(cep);
   }
@@ -23,7 +21,10 @@ export const consomeCep = (cep) => {
 
   const showData = (result) => {
     if (result.erro === true) {
-      alert("Cep não encontrado");
+      let novoCep = replaceNumber(cep, indexCep);
+      indexCep--;
+
+      consomeCep(novoCep);
     } else {
       for (const field in result) {
         if (document.getElementById(field)) {
@@ -32,6 +33,14 @@ export const consomeCep = (cep) => {
       }
     }
   };
+};
+
+export const replaceNumber = (numberCep, index) => {
+  return replaceAt(numberCep, index, "0");
+};
+
+export const replaceAt = (string, index, replace) => {
+  return string.substring(0, index) + replace + string.substring(index + 1);
 };
 
 export const clearFields = () => {
