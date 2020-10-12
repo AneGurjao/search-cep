@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 html,
@@ -18,7 +17,6 @@ header .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 120px;
 }
 
 header .header-logo {
@@ -27,8 +25,8 @@ header .header-logo {
   padding: 10px 0;
 }
 
-header .list-menu {
-  width: 20%;
+header .list-menu ul li {
+  margin-left: 20px;
 }
 
 header .list-menu ul {
@@ -46,13 +44,17 @@ header .list-menu ul a {
 }
 
 header .list-menu ul .navbar__link--active {
-  border-bottom: 3px solid #29b6f6;
+  border-bottom: 3px solid #1a6af1;
   transform: translateY(-2px);
   transition: border-bottom 0.5s ease-in-out;
 }
 
 header .bcg-menu {
   height: 15px;
+}
+
+header .bcg-menu svg {
+  width: 100%;
 }
 
 h1.Title {
@@ -70,7 +72,10 @@ form .form-group {
 }
 
 form .form-group label {
-  width: 82px;
+  width: 58px;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: initial;
 }
 
 input {
@@ -79,16 +84,72 @@ input {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
-input.error-message {
-  border: 2px solid red;
+.img-protocol svg {
+  width: 100%;
+  height: 100%;
 }
 
 .MuiButtonBase-root.btn-clear {
-  background: #6cc32e;
-  color: white;
+  border: 1px solid green;
+  color: green;
   text-transform: capitalize;
   width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.box {
+  padding: 30px;
+}
+
+.box p {
+  font-family: "Arial, tahoma, verdana";
+  color: #393030;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.box p.obs-search {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+/*Media*/
+@media only screen and (max-width: 600px) {
+  header .header-logo {
+    display: block;
+  }
+
+  header .header-logo .logoLu svg {
+    height: 80px;
+  }
+
+  header .list-menu ul li {
+    margin-left: 8px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header .header-logo .logoLu svg {
+    display: none;
+    height: 80px;
+  }
+
+  header .list-menu ul {
+    display: block;
+  }
+
+  header .list-menu ul li {
+    padding: 10px 0;
+    text-align: center;
+  }
 }

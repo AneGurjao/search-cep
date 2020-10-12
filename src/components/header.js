@@ -11,8 +11,12 @@ const Header = () => {
       <Container>
         <div className="menu">
           <div className="header-logo">
-            <LuHeader />
-            <Logo />
+            <div className="logoLu">
+              <LuHeader />
+            </div>
+            <div className="logoName">
+              <Logo />
+            </div>
           </div>
           <div className="list-menu">
             <ul>
