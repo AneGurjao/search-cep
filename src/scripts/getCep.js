@@ -4,11 +4,11 @@ export const searchCep = () => {
   const { value } = document.getElementById("cep");
   let cep = value.replace(/\D/g, "");
   if (cep !== "") {
-    consomeCep(cep);
+    consumeCep(cep);
   }
 };
 
-export const consomeCep = (cep) => {
+export const consumeCep = (cep) => {
   const options = {
     method: "GET",
     mode: "cors",
@@ -24,7 +24,7 @@ export const consomeCep = (cep) => {
       let novoCep = replaceNumber(cep, indexCep);
       indexCep--;
 
-      consomeCep(novoCep);
+      consumeCep(novoCep);
     } else {
       for (const field in result) {
         if (document.getElementById(field)) {
