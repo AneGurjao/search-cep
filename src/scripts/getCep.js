@@ -49,4 +49,5 @@ export const clearFields = () => {
   document.getElementById("bairro").value = "";
   document.getElementById("localidade").value = "";
   document.getElementById("uf").value = "";
+  indexCep = 7;
 };
